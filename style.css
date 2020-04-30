@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+    list-style: none;
+}
+
+.icone-head{
+    width: 1px;
+}
+
+body{
+    background-color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 30vw auto 35vw;
+}
+
+
+button{
+    outline: none;
+}
+
+/*==================HEADER====================================================================================================================================*/
+#header{
+    border: 3px solid red;
+    color: white;
+    position: fixed;
+    width: 30vw;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 5px;
+    height: 100%;
+}
+
+.logo{
+    margin: 0 0 20px 40px;
+    width: 30px;
+}
+
+.nav-button{
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin: 0px 0px 5px 30px;
+    border-radius: 30px;
+    padding: 10px 30px 14px 10px;
+}
+
+.nav-button:hover{
+    background-color: #031019;
+    color: #1b97e4;
+}
+
+.nav-logo{
+    width: 25px;
+    vertical-align: bottom;
+}
+
+.text-button{
+    display: inline;
+    vertical-align: bottom;
+    margin-left: 15px;
+    font-weight: 700;
+}
+
+.selected-button{
+    color: #1b97e4;
+}
+
+.tweetar-button{
+    background-color: #1b97e4;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 14px 80px;
+    border-radius: 30px;
+    margin: 10px 0px 10px 25px;
+}
+
+.tweetar-button:hover{
+    background-color: #1a90da;
+}
+
+.text-tweetar{
+    font-weight: 700;
+}
+
+.meu-perfil{
+    background-color: black;
+    border: none;
+    color: white;
+    margin: 280px 5px 5px 30px;
+    border-radius: 30px;
+}
+
+.avatar, .seta{
+    display: inline;
+}
+
+.avatar img{
+    border-radius: 100%;
+    width: 45px;
+}
+
+.texto-perfil{
+    display: inline-block;
+    vertical-align: top;
+    margin: 2px 20px 0px 10px;
+    text-align: justify;
+}
+
+.texto-perfil span{
+    display: block;
+    font-size: 15px;
+    font-weight: 100;
+    color: #AAA;
+}
+
+.texto-perfil span:first-child{
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+.arrow{
+    width: 15px;
+    vertical-align: top;
+    margin: 18px;
+}
+
+.meu-perfil:hover{
+    background-color: #031019;
+}
+
+/*==================MAIN====================================================================================================================================*/
+#main{   
+    border: 3px solid yellow;
+    color: white;
+    grid-column-start: 2;
+}
+
+/*==================LATERAL====================================================================================================================================*/
+#barra-lateral{
+    border: 3px solid red;
+    color: white;
+    right: 0;
+    top: 0;
+    position: fixed;
+    width: 35vw;
+    height: 100%;
+}
