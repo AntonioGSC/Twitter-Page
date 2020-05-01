@@ -156,6 +156,7 @@ input{
 }
 
 .pag-init{
+    color: #d9d9d9;
     font-weight: 1000;
     font-size: 20px;
     padding: 15px;
@@ -192,15 +193,15 @@ input{
 }
 
 .left-bar{
-    margin: 10px 0px 0px 30px;
+    margin: 5px 0px 0px 30px;
 }
 
 .input-icons{
     border: 1px solid #202327;
     background-color: #202327;
     width: 340px;
-    height: 45px;
-    border-radius: 30px;
+    height: 40px;
+    border-radius: 40px;
     display: flex;
 }
 
@@ -213,9 +214,8 @@ input{
 }
 
 .lupa{
-    margin: auto 10px;
-    width: 22px;
-    height: 22px;
+    margin: auto 10px auto 15px;
+    width: 23px;
 }
 
 .input-icons:hover{   
@@ -224,4 +224,100 @@ input{
 
 #buscar::-webkit-input-placeholder{
     color: #777777;
+}
+
+.assuntos-e-seguir{
+    color: #d9d9d9;
+    background-color: #15181c;
+    margin: 12px 0px;
+    width: 340px;
+    border-radius: 20px;
+}
+
+.titulo-assuntos-seguir{
+    display: flex;
+    border-bottom: 1px solid #2f3336;
+    justify-content: space-between;
+}
+
+.div-icon-circle{
+    margin: auto 15px;
+    border-radius: 100%;
+    width: 35px;
+    padding: 7px;
+}
+
+.div-icon-circle:hover{
+    background-color: #1c2c38;
+}
+
+.assunto-momento{
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 15px;
+    border-bottom: 1px solid #2f3336;
+}
+
+.assunto-momento:hover{
+    background-color: #202327;
+}
+
+.conteudo-assunto{
+    margin: 10px 0;
+}
+
+.titulo-article-assunto{
+    color: #777777;
+    font-size: 13px;
+}
+
+.nome-article-assunto{
+    font-size: 16px;
+    margin: 5px 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.quantidade-tweets{
+    color: #777777;
+    font-size: 16px;
+}
+
+.assunto-arrow{
+    border-radius: 100%;
+    width: 30px;
+    max-width: 30px;
+    padding: 9px;
+}
+
+.image-circle{
+    width: 100%;
+}
+
+.rodape-assuntos-seguir{
+    padding: 18px 15px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.pessoas-seguir{
+    
+}
+
+.rodape-assuntos-seguir:hover{
+    background-color: #202327;
+}
+
+.mais-assuntos{
+    color: #1da0f2;
+}
+
+.texto-rodape-copyright{
+    color: #777777;
+    font-size: 13px;
+    padding: 5px 15px;
+}
+
+.texto-rodape-copyright > a{
+    margin: 0px 3px;
 }
