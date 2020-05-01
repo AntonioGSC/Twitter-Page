@@ -229,7 +229,7 @@ input{
 .assuntos-e-seguir{
     color: #d9d9d9;
     background-color: #15181c;
-    margin: 12px 0px;
+    margin: 10px 0px;
     width: 340px;
     border-radius: 20px;
 }
@@ -254,7 +254,7 @@ input{
 .assunto-momento{
     display: flex;
     justify-content: space-between;
-    padding: 2px 15px;
+    padding: 1px 15px;
     border-bottom: 1px solid #2f3336;
 }
 
