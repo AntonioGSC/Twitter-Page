@@ -24,7 +24,6 @@ button{
 
 /*==================HEADER====================================================================================================================================*/
 #header{
-    border: 3px solid red;
     color: white;
     position: fixed;
     width: 30vw;
@@ -42,7 +41,7 @@ button{
 .nav-button{
     background-color: black;
     border: none;
-    color: white;
+    color: #d9d9d9;
     font-size: 20px;
     margin: 0px 0px 5px 30px;
     border-radius: 30px;
@@ -51,7 +50,7 @@ button{
 
 .nav-button:hover{
     background-color: #031019;
-    color: #1b97e4;
+    color: #1da0f2;
 }
 
 .nav-logo{
@@ -67,11 +66,11 @@ button{
 }
 
 .selected-button{
-    color: #1b97e4;
+    color: #1da0f2;
 }
 
 .tweetar-button{
-    background-color: #1b97e4;
+    background-color: #1da0f2;
     border: none;
     color: white;
     font-size: 18px;
@@ -81,6 +80,7 @@ button{
 }
 
 .tweetar-button:hover{
+    transition-duration: 0.3s;
     background-color: #1a90da;
 }
 
@@ -91,7 +91,7 @@ button{
 .meu-perfil{
     background-color: black;
     border: none;
-    color: white;
+    color: #d9d9d9;
     margin: 280px 5px 5px 30px;
     border-radius: 30px;
 }
@@ -121,7 +121,7 @@ button{
 
 .texto-perfil span:first-child{
     font-size: 16px;
-    color: white;
+    color: #d9d9d9;
     font-weight: bold;
 }
 
@@ -136,15 +136,50 @@ button{
 }
 
 /*==================MAIN====================================================================================================================================*/
+.pag-inicial{
+    border: 1px solid #2f3336;
+    border-top: none;
+    position: fixed;
+    color: #d9d9d9;
+    right: 35vw;
+    left: 30vw;
+    margin-right: auto;
+    margin-left: auto;
+    height: 55px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pag-init{
+    font-weight: 1000;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.div-star{
+    display: inline-block;
+    width: 25px;
+    margin: 12px;
+    right: 0;
+    border-radius: 100%;
+}
+
+.star{
+    width: 100%;
+}
+
 #main{   
-    border: 3px solid yellow;
+    border: 1px solid #2f3336;
+    border-top: none;
     color: white;
     grid-column-start: 2;
+    margin-top: 55px;
 }
 
 /*==================LATERAL====================================================================================================================================*/
 #barra-lateral{
-    border: 3px solid red;
+    border: coral 2px solid;
     color: white;
     right: 0;
     top: 0;
