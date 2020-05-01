@@ -275,7 +275,6 @@ input{
     font-size: 16px;
     margin: 5px 0px;
     font-weight: bold;
-    text-transform: uppercase;
 }
 
 .quantidade-tweets{
@@ -295,13 +294,63 @@ input{
 }
 
 .rodape-assuntos-seguir{
-    padding: 18px 15px;
+    padding: 16px 15px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 
 .pessoas-seguir{
-    
+    display: grid;
+    grid-template-columns: 0.7fr 1.5fr 1fr;
+    padding: 8px 0px;
+    border-bottom: 1px solid #2f3336;
+}
+
+.pessoas-seguir:hover{
+    background-color: #202327;
+}
+
+.foto-seguir{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.foto-seguir >img{
+    border-radius: 100%;
+    width: 47px;
+}
+
+.texto-seguir{ 
+    padding-top: 6px;
+    line-height: 18px;
+}
+
+.texto-seguir > p{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.texto-seguir > .pessoa-arroba{
+    font-weight: normal;
+    font-size: 15px;
+    color: #777777;
+}
+
+.seguir-button{
+    color: #1da0f2;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: transparent;
+    margin: 8px 0;
+    border-radius: 30px;
+    padding: 3px 12px;
+    border: 1px solid #1da0f2;
+    padding-bottom: 5px;
+}
+
+.seguir-button:hover{
+    background-color: #1c2c38;
 }
 
 .rodape-assuntos-seguir:hover{
@@ -315,7 +364,7 @@ input{
 .texto-rodape-copyright{
     color: #777777;
     font-size: 13px;
-    padding: 5px 15px;
+    padding: 3px 15px;
 }
 
 .texto-rodape-copyright > a{
