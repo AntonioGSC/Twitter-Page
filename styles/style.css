@@ -22,6 +22,10 @@ button{
     outline: none;
 }
 
+input{
+    outline: none;
+}
+
 /*==================HEADER====================================================================================================================================*/
 #header{
     color: white;
@@ -179,11 +183,45 @@ button{
 
 /*==================LATERAL====================================================================================================================================*/
 #barra-lateral{
-    border: coral 2px solid;
     color: white;
     right: 0;
     top: 0;
     position: fixed;
     width: 35vw;
     height: 100%;
+}
+
+.left-bar{
+    margin: 10px 0px 0px 30px;
+}
+
+.input-icons{
+    border: 1px solid #202327;
+    background-color: #202327;
+    width: 340px;
+    height: 45px;
+    border-radius: 30px;
+    display: flex;
+}
+
+#buscar{
+    color: white;
+    font-size: 16px;
+    background-color: #202327;
+    border: none;
+    width: 250px;
+}
+
+.lupa{
+    margin: auto 10px;
+    width: 22px;
+    height: 22px;
+}
+
+.input-icons:hover{   
+    border: 1px solid #1da0f2;
+}
+
+#buscar::-webkit-input-placeholder{
+    color: #777777;
 }
