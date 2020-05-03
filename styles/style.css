@@ -14,7 +14,7 @@ body{
 
 .container {
     display: grid;
-    grid-template-columns: 30vw auto 35vw;
+    grid-template-columns: 29vw auto 34vw;
 }
 
 
@@ -30,7 +30,7 @@ input{
 #header{
     color: white;
     position: fixed;
-    width: 30vw;
+    width: 29vw;
     display: flex;
     justify-content: flex-end;
     padding: 10px 5px;
@@ -145,8 +145,8 @@ input{
     border-top: none;
     position: fixed;
     color: #d9d9d9;
-    right: 35vw;
-    left: 30vw;
+    right: 34vw;
+    left: 29vw;
     margin-right: auto;
     margin-left: auto;
     height: 55px;
@@ -182,13 +182,67 @@ input{
     margin-top: 55px;
 }
 
+.acontecendo{
+    display: flex;
+    padding: 10px 15px;
+}
+
+.acontecendo > .avatar{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.acontecendo > .avatar > .perfil-image{
+    width: 100%;
+}
+
+#acontecendo-area{
+    font-size: 19px;
+    color: #999ca2;
+    width: 100%;
+    background-color: black;
+    border: none;
+}
+
+#acontecendo-area::-webkit-input-placeholder{
+    color: #999ca2;
+}
+
+.icones-main{
+    display: flex;
+    padding-left: 4vw;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 9px solid #2f3336;
+    justify-content: space-between;
+}
+
+.painel-icones{
+    margin-top: 10px;
+    width: 150px;
+}
+
+.painel-acontecendo{
+    width: 100%;
+}
+
+.tweetar-main > .tweetar-button{
+    background-color: #1da0f2;
+    border: none;
+    color: white;
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin: 2px 15px 0px 0px;
+}
+
 /*==================LATERAL====================================================================================================================================*/
 #barra-lateral{
     color: white;
     right: 0;
     top: 0;
     position: fixed;
-    width: 35vw;
+    width: 34vw;
     height: 100%;
 }
 
@@ -285,8 +339,12 @@ input{
 .assunto-arrow{
     border-radius: 100%;
     width: 30px;
-    max-width: 30px;
+    height: 28px;
     padding: 9px;
+}
+
+.assunto-arrow:hover{
+    background-color: #1c2c38;
 }
 
 .image-circle{
@@ -369,4 +427,64 @@ input{
 
 .texto-rodape-copyright > a{
     margin: 0px 3px;
+}
+
+/*==================RESPONSIVO====================================================================================================================================*/
+/* @media (max-width: 1280px){ */
+
+@media (max-width: 1550px){
+    .container {
+        grid-template-columns: 25vw auto 30vw;
+    }
+
+    .pag-inicial{
+        right: 30vw;
+        left: 25vw;
+    }
+
+    #barra-lateral{
+        width: 30vw;
+    }
+
+    #header{
+        width: 25vw;
+    }
+}
+
+@media (min-width: 1980px){
+    .container {
+        grid-template-columns: 32.5vw auto 37.5vw;
+    }
+
+    .pag-inicial{
+        right: 37.5vw;
+        left: 32.5vw;
+    }
+
+    #barra-lateral{
+        width: 37.5vw;
+    }
+
+    #header{
+        width: 32.5vw;
+    }
+}
+
+@media (min-width: 2380px){
+    .container {
+        grid-template-columns: 35.5vw auto 40.5vw;
+    }
+
+    .pag-inicial{
+        right: 40.5vw;
+        left: 35.5vw;
+    }
+
+    #barra-lateral{
+        width: 40.5vw;
+    }
+
+    #header{
+        width: 35.5vw;
+    }
 }
