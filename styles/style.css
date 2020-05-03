@@ -236,6 +236,7 @@ input{
 }
 
 .post-main{
+    color: #d9d9d9;
     padding: 10px 0px 10px 10px;
     border-bottom: 1px solid #2f3336;
 }
@@ -257,6 +258,7 @@ input{
 }
 
 .perfil-post{
+    line-height: 20px;
     font-size: 15px;
     font-weight: 800;
     margin-bottom: 5px;
@@ -265,6 +267,16 @@ input{
 .quem{
     font-weight: normal;
     color: #777777;
+}
+
+.foto-post{
+    margin-top: 15px;
+    width: 96%;
+}
+
+.imagem-post-main{
+    border-radius: 20px;
+    width: 100%;
 }
 
 .menu-inferior{
