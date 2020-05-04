@@ -26,6 +26,10 @@ input{
     outline: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 /*==================HEADER====================================================================================================================================*/
 #header{
     color: white;
@@ -33,13 +37,14 @@ input{
     width: 29vw;
     display: flex;
     justify-content: flex-end;
-    padding: 10px 5px;
+    padding: 10px 15px;
     height: 100%;
 }
 
 .logo{
     margin: 0 0 20px 40px;
     width: 30px;
+    fill: white;
 }
 
 .nav-button{
@@ -47,19 +52,32 @@ input{
     border: none;
     color: #d9d9d9;
     font-size: 20px;
-    margin: 0px 0px 5px 30px;
+    margin: 0px 0px 10px 30px;
     border-radius: 30px;
     padding: 10px 30px 14px 10px;
 }
 
+.nav-button > a{
+    color: #d9d9d9;
+}
+
 .nav-button:hover{
     background-color: #031019;
+    
+}
+
+.nav-button:hover > a{
     color: #1da0f2;
 }
 
 .nav-logo{
     width: 25px;
     vertical-align: bottom;
+    fill: white;
+}
+
+.nav-button:hover .nav-logo{
+    fill: #1da0f2;
 }
 
 .text-button{
@@ -83,9 +101,22 @@ input{
     margin: 10px 0px 10px 25px;
 }
 
+.tweetar-button > a{
+    color: white;
+}
+
 .tweetar-button:hover{
     transition-duration: 0.3s;
     background-color: #1a90da;
+}
+
+.feather-tweet{
+    display: none;
+    width: 30px;
+}
+
+.icone-post-inferior-tweet{
+    fill: white;
 }
 
 .text-tweetar{
@@ -93,10 +124,11 @@ input{
 }
 
 .meu-perfil{
+    position: relative;
     background-color: black;
     border: none;
     color: #d9d9d9;
-    margin: 280px 5px 5px 30px;
+    margin: 27vh 5px 5px 30px;
     border-radius: 30px;
 }
 
@@ -217,11 +249,22 @@ input{
 }
 
 .painel-icones{
-    margin-top: 10px;
-    width: 150px;
+    margin-top: 5px;
+    width: 180px;
 }
 
-.painel-acontecendo{
+.painel-icones > .div-icon-circle{
+    display: inline-block;
+    margin: 0px;
+    width: 40px;
+}
+
+.painel-icones > .div-icon-circle:hover{
+    background-color: #031019;
+}
+
+.painel-icones-acontecendo{
+    fill: #1da0f2;
     width: 100%;
 }
 
@@ -293,15 +336,35 @@ input{
 
 .icone-post-inferior{
     width: 100%;
+    fill: #9c9c9c;
 }
 
-.icone-post-div:nth-child(2){
-    margin-top: 2px;
-    width: 20px;
+.menu-inferior > .div-icon-circle{
+    margin: 0px;
 }
 
-.icone-post-div:nth-child(3){
-    width: 20px;
+.icone-pv:hover > .icone-post-inferior {
+    fill: #1da0f2;
+}
+
+.icone-coment:hover > .icone-post-inferior{
+    fill: #1da0f2;
+}
+
+.icone-retweet:hover > .icone-post-inferior{
+    fill: #169a53;
+} 
+
+.icone-coracao:hover > .icone-post-inferior{
+    fill: #ca2358;
+} 
+
+.div-icon-circle.icone-retweet:hover{
+    background-color: #152923;
+}
+
+.div-icon-circle.icone-coracao:hover{
+    background-color: #2a1a23;
 }
 
 /*==================LATERAL====================================================================================================================================*/
@@ -498,8 +561,6 @@ input{
 }
 
 /*==================RESPONSIVO====================================================================================================================================*/
-/* @media (max-width: 1280px){ */
-
 @media (max-width: 1550px){
     .container {
         grid-template-columns: 25vw auto 30vw;
@@ -554,5 +615,54 @@ input{
 
     #header{
         width: 35.5vw;
+    }
+}
+
+@media (max-width: 1280px){ 
+    .container {
+        grid-template-columns: 8vw auto 38vw;
+    }
+
+    .pag-inicial{
+        right: 38vw;
+        left: 8vw;
+    }
+
+    #barra-lateral{
+        width: 38vw;
+    }
+
+    #header{
+        width: 8vw;
+    }
+
+    .tweetar-button{
+        padding: 10px;
+        border-radius: 30px;
+        margin: 10px 0px 10px 25px;
+    }
+
+    .feather-tweet{
+        display:block;
+    }
+    .nav-button{
+        padding: 10px;
+    }
+    .text-button{
+        display: none;
+    }
+    .text-tweetar{
+        display: none;
+    }
+    .texto-perfil{
+        display: none;
+    }
+    .seta{
+        display: none;
+    }
+    .meu-perfil{
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 10px;
     }
 }
